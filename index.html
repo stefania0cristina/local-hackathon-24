@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C(h)atbot</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            
+            <!--<img class="catimg" src="./jiggy.gif" width="50px" height="50px">-->
+            <h1 class="title">Welcome to C(h)atBot!</h1>
+            <div class="mode-toggle" onclick="toggleDarkMode()">
+                <img src="cat-black-outline.png" id="catOutline" alt="Cat Head Outline">
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div id="caption"></div>
+            <img id="gif_box" src="" alt="" style="width:440px;height:328px;">
+            
+            <div id="chatHistory" class="chat-history">
+                
+            </div>
+           
+        </div>
+        
+        <div class="input-container">
+            <div class="text-bubble">
+                <input type="text" id="userPrompt" placeholder="Enter your prompt...">
+            </div>
+            <button onclick="sendPrompt();sendPrompt2();">Send</button>
+        </div>
+        
+    </div>
+    <div id="sentiment"></div>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

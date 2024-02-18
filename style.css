@@ -1,0 +1,149 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+@font-face{
+    font-family: 'Comic Sans MS';
+    src: url(COMIC.TTF);
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: rgb(194, 157, 241);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    background-color: rgb(194, 157, 241); 
+}
+
+.title {
+    font-family: 'Impact';
+    padding-right: 25px;
+    color: rgb(36, 39, 58);
+}
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    font-family: 'Comic Sans MS';
+    color: rgb(36, 39, 58);
+}
+
+.catimg { 
+    margin: 25px;
+}
+
+.mode-toggle {
+    cursor: pointer;
+}
+
+.mode-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.sentiment {
+    position:fixed;
+    ;
+    margin-top: auto;
+
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-message, .cat-response {
+    background-color: #9de7ff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    align-self: flex-end; 
+}
+
+.cat-response {
+    align-self: flex-start; 
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: pink;
+    background-color: #e9d5f5;
+    margin: 25px;
+}
+
+.text-bubble {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-bubble input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--ctp-frappe-red);
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode .header {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .title {
+    color: #ffffff;
+}
+
+.dark-mode .main {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .user-message {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+.dark-mode .cat-response {
+    background-color: #3d3d3d;
+}
+
+.dark-mode .input-container {
+    background-color: #333333;
+}
