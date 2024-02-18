@@ -13,6 +13,7 @@ function sendPrompt() {
     const chatHistory = document.getElementById("chatHistory");
 
     chatHistory.innerHTML += `<div class="user-message">${userInput}</div>`;
+    chatHistory.innerHTML += `<div class="user-message">${userInput}</div>`;
 
     //document.getElementById("userPrompt").value = "";
 
